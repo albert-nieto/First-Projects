@@ -18,7 +18,7 @@ SPAWN_FRUIT_EVENT = pygame.event.Event(SPAWN_FRUIT)
 #COLORS
 BLUE = (0, 0, 255)
 BLACK = (0, 0, 0)
-RED = (255, 0, 0)
+RED = (255, 255, 0)
 
 class Snake():
     def __init__(self):
