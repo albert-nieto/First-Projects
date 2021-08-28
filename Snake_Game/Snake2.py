@@ -24,6 +24,7 @@ class Snake():
     def __init__(self):
                            #middle of screen(the head)
         self.snake_body = [[17//2, 15//2]]
+        print(self.snake_body, ' test')
 
     def move(self, head_direction, new_cube):
         #This is here to add save the last element of the snake before it all gets changed.
@@ -80,6 +81,7 @@ class Snake():
         return collide
 
 def draw_snake(snake):
+    print(snake.snake_body)
     for section in snake.snake_body:
         pygame.draw.rect(SCREEN, BLUE, (section[0] * WIDTH, section[1] * WIDTH, WIDTH, WIDTH))
         pygame.display.update()
@@ -119,7 +121,7 @@ def main():
     direction = 'None'
     game_over = False
     while True:
-        print(fruit)
+        #print(fruit)
         spawn_new = False
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
